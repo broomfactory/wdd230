@@ -15,7 +15,7 @@ header, main, footer {
 
 header, footer {
     margin: 1rem auto;
-    background-color: #508763;
+    background-color: #407464;
     color: white;
     border-radius: 1rem;
 }
@@ -35,7 +35,7 @@ header picture {
 header h1 {
     padding: 0 2rem;
     margin: 0 auto;
-    font-size: 2.5rem;
+    font-size: 2.5rem;    
 }
 
 main {
@@ -46,11 +46,20 @@ main ul {
     padding: 0 2rem;
 }
 
+main h2 {
+    font-size: 1.5rem;
+}
 
-
-footer {
+footer {    
     text-align: center;
     padding: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
+#copyright {
+    font-weight: 700;
+}
+
+#modifiedDate {
+    font-weight: 100;
+}
