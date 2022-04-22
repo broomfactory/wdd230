@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=JetBrains+Mono&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+header, main, footer {
+    font-family: 'JetBrains Mono', Courier, monospace;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header, footer {
+    margin: 1rem auto;
+    background-color: #508763;
+    color: white;
+    border-radius: 1rem;
+}
+
+header {
+    font-family: Cinzel, 'Times New Roman', Serif;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+header picture {    
+    padding: 2rem;
+}
+
+header h1 {
+    padding: 0 2rem;
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+main ul {
+    padding: 0 2rem;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
