@@ -2,7 +2,7 @@ const copyrightSpan = document.querySelector("#copyright");
 const d = new Date();
 const year = d.getFullYear();
 
-copyrightSpan.textContent = `\u00A9 ${year} >=< Matthew Scoville`;
+copyrightSpan.textContent = `${year}`;
 
 const modifiedSpan = document.querySelector("#modifiedDate");
 const dateLastModified = document.lastModified;
