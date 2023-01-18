@@ -2,7 +2,8 @@
     --deep-color: #2c3750;
     --medium-color: #eef3ff;
     --background-color: #ffffff;
-
+    --a-color: #065de9;
+    --a-visited-color: #544074;
 }
 
 * {    
@@ -21,17 +22,17 @@ img {
 }
 
 a {
-    color: #2c5045;
+    color: var(--a-color);
     text-decoration: none;
     font-weight: bold;
 }
 
 a:visited {
-    color: #544074;
+    color: var(--a-visited-color);
 }
 
 a:hover {
-    background-color: #02b17c;
+    background-color: var(--a-color);
     color: white;
 }
 

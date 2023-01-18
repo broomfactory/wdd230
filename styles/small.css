@@ -32,6 +32,10 @@ header, footer {
     color: white;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
 
 header picture {    
     display: inline-block;
