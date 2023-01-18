@@ -1,14 +1,23 @@
 :root {
-    --fir: #2c5045;
+    --deep-color: #2c3750;
+    --medium-color: #eef3ff;
+    --background-color: #ffffff;
 
 }
 
 * {    
-    font-family: "Nunito", sans-serif;
-    font-size: 18px;
     box-sizing: border-box;
-    padding: 1rem;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: var(--background-color);
+}
+
+img {
+    width: 100%;    
 }
 
 a {
@@ -31,23 +40,35 @@ main, header, footer {
 }
 
 header, footer {
-    background-color: var(--fir);
+    background-color: var(--deep-color);
     color: white;
     text-align: center;
     border-radius: 1rem;
+    padding: 1rem;
 }
 main {
 
-    display: grid;
+    display: grid;    
     grid-template-columns: 1fr;    
 }
 
 section {
-    border: 1px solid var(--fir);
-    
+    border: 0.2rem solid var(--deep-color);
+    background-color: var(--medium-color);
+    color: black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;    
 }
 
+section h3 {
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
 
+section img {
+    padding-bottom: 1rem;
+}
 
 footer {    
     text-align: center;
