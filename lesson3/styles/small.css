@@ -1,0 +1,145 @@
+:root {
+    --theme-color: #0097bc;
+    --complementary-color: #bc2500;
+    --background-color: #f4f4f4;
+    --a-color: #065de9;
+    --a-visited-color: #544074;
+}
+
+.swatch1 {
+    background-color: var(--theme-color);
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.swatch2 {
+    background-color: var(--complementary-color);
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.swatch3 {
+    background-color: var(--background-color);
+    color: black;
+    padding: 1rem;
+    font-weight: bold;
+    border-style: 2px solid black;
+}
+
+.swatch4 {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;    
+}
+
+
+* {    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--a-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+/*
+a:visited {
+    color: var(--a-visited-color);
+}
+*/
+a:hover {
+    background-color: var(--a-color);
+    color: white;
+}
+
+main, header, footer {
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: var(--theme-color);
+    color: white;
+    text-align: center;    
+    padding: 1rem;
+}
+
+nav {
+    background-color: var(--complementary-color); 
+    margin: 0 auto;  
+    
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    color: white;   
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+}
+
+.current {
+    background-color: var(--theme-color);
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: var(--theme-color);
+}
+
+section {
+    border: 0.2rem solid var(--theme-color);
+    background-color: var(--background-color);
+    color: black;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0.5rem;    
+}
+
+section h2, section h3 {    
+    padding: 1rem 0;
+    color: var(--complementary-color);
+}
+
+section img {
+    padding-bottom: 1rem;
+}
+
+section ul {
+    padding: 1rem;
+}
+
+footer {    
+    text-align: center;
+    padding: 1rem;
+}
+
+.emphasis {
+    font-weight: 700;
+}
+
+#modifiedDate {
+    font-weight: 100;
+}
