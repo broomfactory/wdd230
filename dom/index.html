@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The DOM - Matthew Scoville</title>
+        <meta name="description" content="Presentation: Introduction to the Document Object Model">
+        <meta name="author" content="Matthew Scoville">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </head>
+    <body>
+        <header>
+            <h1>The DOM</h1>
+            <h2>Matthew Scoville</h2>
+        </header>
+        <main>
+            <section>
+                <h3>What is the DOM?</h3>
+                
+                <ul>
+                    <li>Document Object Model</li>
+                    <li>Programming interface for web pages</li>
+                    <li>Represents the document as nodes and objects</li>
+                    <li>Allows programs to change document structure, style, and content.</li>
+                </ul>
+                
+            </section>
+            <section>
+                <h3>DOM Interface</h3>
+                <ul>
+                    <li>Document - the root document object</li>
+                    <li>Node - element, text, or attribute</li>
+                    <li>Element - node of type Element</li>
+                    <li>NodeList - array of elements</li>
+                </ul>
+                <ul>
+                    <li>document.querySelector()</li>
+                    <li>document.querySelectorAll()</li>
+                    <li>document.createElement()</li>
+                    <li>parentNode.appendChild(node)</li>
+                    <li>element.innerHTML</li>
+                    <li>element.style.left</li>
+                    <li>element.setAttribute()</li>
+                    <li>element.getAttribute()</li>
+                    <li>element.addEventListener()</li>                    
+                </ul>
+            </section>
+            <section>
+                <h3>Example</h3>
+                <ul>
+                    <li><a href="..\todo">A Simple To Do List</a></li>
+                </ul>
+                
+            </section>
+        </main>
+        <footer>
+            <div class="emphasis">©<span id="copyright"></span> Matthew Scoville | BYUI WDD230 | Winter 2023</div>
+            <div id="modifiedDate"></div>
+        </footer>
+        <script src="scripts/footer.js"></script>    
+    </body>
+</html>

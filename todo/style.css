@@ -1,0 +1,88 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Quintessential&display=swap');
+
+
+body {
+  background-color: #28427B;
+  font-family: "Raleway", "Arial", sans-serif;
+}
+
+header {
+  background-color: #28427B;
+}
+
+#content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: white;
+  border-radius: 1em;
+}
+
+#toDoItems {
+  list-style-type: none;
+}
+
+.itemPadding {
+  padding: 0.5em 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Quintessential", cursive, fantasy;
+}
+
+main {
+  background-color: white;
+  color: black;  
+}
+
+input,
+textarea {
+  /* To makre sure that all text fields have the same font settings--
+  textareas use monospace by default */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999999;
+}
+
+input:focus,
+textarea:focus {
+  /* additional highlight for focused elements */
+  border-color: #000000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /*same size as label elements */
+}
+
+button {
+  /* Extra margin roughly same as the space between labels and text fields */
+  margin-left: 0.5em;
+}
+
+#feedback {
+  background-color: #0B6E4F;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+

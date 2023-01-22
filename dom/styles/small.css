@@ -1,0 +1,85 @@
+:root {
+    --deep-color: #E91E63;
+    --medium-color: #1EE9A4;
+    --background-color: #ffffff;
+    --a-color: #065de9;
+    --a-visited-color: #544074;
+}
+
+* {    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: var(--background-color);
+}
+
+img {
+    width: 100%;    
+}
+
+a {
+    color: var(--a-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: var(--a-visited-color);
+}
+
+a:hover {
+    background-color: var(--a-color);
+    color: white;
+}
+
+main, header, footer {
+    margin: 1rem auto;
+}
+
+header, footer {
+    background-color: var(--deep-color);
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+main {
+
+    display: grid;    
+    grid-template-columns: 1fr;    
+}
+
+section {
+    border: 0.2rem solid var(--deep-color);
+    background-color: var(--medium-color);
+    color: black;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0.5rem;    
+}
+
+section h3 {
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+section img {
+    padding-bottom: 1rem;
+}
+
+footer {    
+    text-align: center;
+    padding: 1rem;
+}
+
+.emphasis {
+    font-weight: 700;
+}
+
+#modifiedDate {
+    font-weight: 100;
+}
