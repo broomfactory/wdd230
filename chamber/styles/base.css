@@ -1,0 +1,109 @@
+:root {
+    --deep-color: #092327;
+    --theme-color: #0B5351;
+    --secondary-color: #00a9a5;
+    --analogous-color: #4e8090;
+    --analogous-light: #90c2e7;
+    --background-color: #f4f4f4;
+    --a-color: #065de9;
+    --a-visited-color: #544074;
+    /* https://coolors.co/092327-0b5351-00a9a5-4e8098-90c2e7 */
+}
+
+* {    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--deep-color);
+}
+
+#chamberlogo {
+    width: 50px;    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+}
+
+.social {
+    width: 2rem;
+    place-self: center;
+    
+}
+
+header {
+   background-color: white;
+   display: grid;
+   grid-template-columns: 2.5rem 1fr 2.5rem 2.5rem 2.5rem;
+   grid-template-rows: 2.5rem 2.5rem auto;
+   column-gap: 1rem;
+   row-gap: 1rem;
+   min-width: 430px;
+}
+
+body {
+    background-color: white;
+}
+
+.row1 {grid-row: 1;}
+
+header h1, h2 {
+    margin: 0;    
+    color: var(--theme-color);   
+    display: block; 
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header h2 {
+    font-size: 1rem;
+}
+
+header button {
+    border-color: rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+#currentdate {
+  grid-row: 2;  
+  grid-column-start: 1;
+  grid-column-end: -1;  
+  place-self: center;
+}
+
+nav {
+    background-color: var(--theme-color);
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row: 3;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: none;
+}
+
+nav.open ul li {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+nav {display: none;}
+nav.open {display: block;}
+
+#hamburger span:nth-child(1) {display: block;}
+#hamburger span:nth-child(2) {display: none;}
+
+#hamburger.open span:nth-child(1) {display: none;}
+#hamburger.open span:nth-child(2) {display: block;}
