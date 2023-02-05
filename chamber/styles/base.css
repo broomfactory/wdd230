@@ -3,7 +3,7 @@
     --theme-color: #0B5351;
     --secondary-color: #00a9a5;
     --analogous-color: #4e8090;
-    --analogous-light: #90c2e7;
+    --analogous-light: #c0d6e7;
     --background-color: #f4f4f4;
     --a-color: #065de9;
     --a-visited-color: #544074;
@@ -22,38 +22,62 @@ body {
 }
 
 #chamberlogo {
-    width: 50px;    
+    width: 3rem;   
+    margin: 0 0.5rem; 
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel', serif;
 }
 
-.social {
-    width: 2rem;
-    place-self: center;
-    
-}
-
 header {
-   background-color: white;
-   display: grid;
-   grid-template-columns: 2.5rem 1fr 2.5rem 2.5rem 2.5rem;
-   grid-template-rows: 2.5rem 2.5rem auto;
-   column-gap: 1rem;
-   row-gap: 1rem;
+   background-color: var(--theme-color);   
+   padding: 0.5em;
    min-width: 430px;
+   min-height: 14rem;
 }
 
 body {
     background-color: white;
 }
 
-.row1 {grid-row: 1;}
+
+#headeritems {
+    display: grid;
+    grid-template-columns: 4rem 4rem 1fr 8rem;
+    grid-template-rows: 4rem 1fr 1rem;
+}
+
+#hamburger {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+header picture {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#title {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#social {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+#navmenu {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
 
 header h1, h2 {
     margin: 0;    
-    color: var(--theme-color);   
+    color: white; 
     display: block; 
 }
 
@@ -70,40 +94,101 @@ header button {
     background-color: white;
 }
 
-#currentdate {
-  grid-row: 2;  
-  grid-column-start: 1;
-  grid-column-end: -1;  
-  place-self: center;
-}
-
 nav {
+    margin: 0 auto;
     background-color: var(--theme-color);
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row: 3;
+    color: white;
 }
 
 nav ul li {
     list-style-type: none;
-    display: none;
+    display: block;
+    padding: 0 1rem;
 }
 
+/*
 nav.open ul li {
     display: block;
+    flex-direction: column;       
+    
 }
-
+*/
 nav ul li a {
     text-decoration: none;
     color: white;
     display: block;
+    padding: 0.4rem; 
+    flex: 1 1 auto; 
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
 }
 
 nav {display: none;}
 nav.open {display: block;}
+
+#hamburger {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0,0,0,0.2);
+    color: var(--background-color);
+    font-size: 2rem;
+    border: none;
+}
 
 #hamburger span:nth-child(1) {display: block;}
 #hamburger span:nth-child(2) {display: none;}
 
 #hamburger.open span:nth-child(1) {display: none;}
 #hamburger.open span:nth-child(2) {display: block;}
+
+
+section {
+    display: block;
+    padding: 1rem;
+    background-color: var(--analogous-light);
+    text-align: center;
+    width: 100%;
+    border: 1px solid var(--analogous-color);
+    min-height: 15rem;
+    margin: 1rem 0;
+}
+
+section div {
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    
+}
+
+#topbanner {
+    color: white;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    margin: 1rem 0;
+    display: none;
+}
+
+#topbanner.show {
+    display: block;
+}
+
+#currentdate {
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;    
+}
+
+footer {
+    background-color: var(--theme-color);
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+footer img, footer div {
+    margin: 1rem;
+}
