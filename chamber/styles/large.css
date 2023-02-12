@@ -3,19 +3,29 @@
 
     #hamburger { display: none; }
     
-    #headeritems {
+    
+    header {
         display: grid;
-        grid-template-columns: 4rem 16rem 1fr 8rem;
-        grid-template-rows: 4rem 1fr;
-
+        grid-template-columns: 4rem;
+        grid-auto-columns: auto;
+        grid-template-rows: 4rem;
+        grid-auto-rows: auto;
+        gap: 0.25rem;
+        padding: 0.5rem;
     }
     
+
+
     header picture {
         grid-column: 1/2;
         grid-row: 1/2;
         align-self: center;
     }
     
+    #chamberlogo {
+        width: 4rem;
+    }
+
     #currentdate {
         font-size: 1.2rem;
         align-self: center;
@@ -25,6 +35,14 @@
         grid-column: 2/3;
         grid-row: 1/2;
         align-self: center;
+    }
+
+    #title h1 {
+        font-size: 2rem;
+    } 
+    
+    #title h2 {
+        font-size: 1.5rem;
     }
     
     #social {
