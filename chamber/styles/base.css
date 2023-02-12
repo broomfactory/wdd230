@@ -21,72 +21,89 @@ body {
     background-color: var(--deep-color);
 }
 
-#chamberlogo {
-    width: 3rem;   
-    margin: 0 0.5rem; 
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel', serif;
 }
 
 header {
-   background-color: var(--theme-color);   
-   padding: 0.5em;
-   min-width: 430px;
-   min-height: 14rem;
+    background-color: var(--theme-color);  
+    display: grid; 
+    grid-template-columns: 2rem;
+    grid-auto-columns: auto;
+    grid-template-rows: 2rem;
+    grid-auto-rows: auto;
+    gap: 0.25rem;
+    padding: 0.5rem;
 }
 
 body {
     background-color: white;
 }
 
+#topbanner {
+    color: white;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    margin: 0;
+    display: none;    
+}
 
-#headeritems {
-    display: grid;
-    grid-template-columns: 3rem 4rem 1fr 6rem;
-    grid-template-rows: 4rem 1fr 1rem;
+#topbanner.show {
+    display: block;
 }
 
 #hamburger {
-    grid-column: 1/2;
     grid-row: 1/2;
+    justify-self: right;
 }
 
 header picture {
-    grid-column: 2/3;
+    grid-row: 1/2;    
+}
+
+#chamberlogo {
     grid-row: 1/2;
+    width: 2rem;       
 }
 
 #title {
-    grid-column: 3/4;
     grid-row: 1/2;
+    justify-self: center;
 }
 
 #social {
-    grid-column: 4/5;
     grid-row: 1/2;
+    justify-self: right;
 }
 
 #navmenu {
-    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#currentdate {
+    color: white;
+    display: block;
+    width: 100%;
+    /*justify-self: center; */
+    text-align: center;
     grid-row: 2/3;
+    grid-column: 1/4;   
 }
 
 
 
-header h1, h2 {
+header h1, header h2 {
     margin: 0;    
-    color: white; 
-    display: block; 
+    color: white;   
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 header h2 {
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 
 header button {
@@ -106,13 +123,6 @@ nav ul li {
     padding: 0 1rem;
 }
 
-/*
-nav.open ul li {
-    display: block;
-    flex-direction: column;       
-    
-}
-*/
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -129,11 +139,11 @@ nav {display: none;}
 nav.open {display: block;}
 
 #hamburger {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     background-color: rgba(0,0,0,0.2);
     color: var(--background-color);
-    font-size: 2rem;
+    font-size: 1rem;
     border: none;
 }
 
@@ -144,51 +154,69 @@ nav.open {display: block;}
 #hamburger.open span:nth-child(2) {display: block;}
 
 
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+
 section {
-    display: block;
-    padding: 1rem;
+    display: block;    
     background-color: var(--analogous-light);
     text-align: center;
-    width: 100%;
-    border: 1px solid var(--analogous-color);
-    min-height: 15rem;
-    margin: 1rem 0;
+    /*width: 100%;*/
+    border: 1px solid var(--analogous-color);    
+    
 }
 
 section div {
     margin: 0 1rem;
     padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    
+    border: 1px solid rgba(255, 255, 255, 0.8);    
 }
 
-#topbanner {
-    color: white;
-    padding: 1rem;
-    background-color: var(--secondary-color);
-    margin: 1rem 0;
-    display: none;
-}
-
-#topbanner.show {
-    display: block;
-}
-
-#currentdate {
-    color: white;
+section picture img{
     display: block;
     width: 100%;
-    text-align: center;    
+}
+
+
+#weather {    
+    position: relative;
+    text-align: center;
+    color: white;    
+}
+
+
+
+#weatherstats {
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.5);
+    border: 0px;
+    color: white;
+    padding: 2rem;
+    margin: 0;
 }
 
 footer {
     background-color: var(--theme-color);
     color: white;
-    text-align: center;
-    margin-top: 1rem;
-    padding: 2rem;
+    text-align: center;   
+    font-size: smaller;
 }
+
+footer picture img {
+    width: 25vw;
+}
+
 
 footer img, footer div {
     margin: 1rem;
 }
+

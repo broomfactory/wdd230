@@ -21,6 +21,7 @@
     /* Medium responsive grid */
     #hero, #news, #spotlight, #join { grid-column: 1/4; }
     #event { grid-column: 1/3;}
+    /*#weather { grid-column: 3/4;}*/
 
 
     footer {
