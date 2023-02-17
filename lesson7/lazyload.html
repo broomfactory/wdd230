@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lazy Image Loading</title>
+        <meta name="description" content="Learning activity, week 7! - WDD230 - Web Front End, BYU Idaho, Winter 2023">
+        <meta name="author" content="Matthew Scoville">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <main>
+            <h1>Galerie de Curie</h1>
+            <picture><img src="images/placeholder.webp" data-src="images/curie1.webp" width="300" alt="Cat in a sink"></picture>
+            <picture><img src="images/placeholder.webp" data-src="images/curie2.webp" width="300" alt="Sleepy cat"></picture>
+            <picture><img src="images/placeholder.webp" data-src="images/curie3.webp" width="300" alt="Cat at golden hour"></picture>
+            <picture><img src="images/placeholder.webp" data-src="images/curie4.webp" width="300" alt="Foreshortened urban cat"></picture>
+            <picture><img src="images/placeholder.webp" data-src="images/curie5.webp" width="300" alt="A cat who is quite pleased with himself"></picture>
+            <picture><img src="images/placeholder.webp" data-src="images/curie6.webp" width="300" alt="Cat in pink bunny ears"></picture>
+        </main>   
+        <footer>
+            <div class="emphasis">©<span id="copyright"></span> Matthew Scoville | BYUI WDD230 | Winter 2023</div>
+            <div id="modifiedDate"></div>
+        </footer>
+        <script src="scripts/loadimages.js" defer></script>  
+        <script src="scripts/footer.js" defer></script>
+    </body>
+</html>
+
