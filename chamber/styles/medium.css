@@ -18,6 +18,14 @@
         row-gap: 0.5rem;
     }
 
+    img.gallery {
+        border-radius: 1em;
+    }
+
+    main.gallery section p, main.gallery section h2 {
+        font-size: 2rem;
+    }
+
     /* Medium responsive grid */
     #hero, #news, #spotlight, #join { grid-column: 1/4; }
     #event { grid-column: 1/3;}

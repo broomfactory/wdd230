@@ -46,14 +46,70 @@
                 <li><a href="#">Contact</a></li>
             </ul>                
         </nav>
-        <main>
-           <section><h2><span id="lastvisit"></span></h1></section>
+        <main class="gallery">
+           
            <section><h2>Discover Salt Lake City</h2></section>
+
            <section>
-                <picture><img src="images/whale800.webp" alt="The Whale!"></picture>
-           </section>
+                <h2>9th and 9th</h2>
+                <picture>
+                    <!-- <source media="(max-width: 560px)" srcset="images/whale500.webp">
+                    <source media="(max-width: 1020px)" srcset="images/whale800.webp">
+                    <source media="(min-width: 1020px)" srcset="images/whale1200.webp"> -->
+                    <img class="gallery" src="images/placeholder.webp" data-src="images/whale500.webp" width="500" alt="The Whale!"  >
+                </picture>
+                <p>This area is now known for a giant painted whale statue in the middle of a roundabout. It also hosts several wonderful restaurants and dessert spots. The 9 line bike trail makes this a pleasant place to travel on foot, by bike, or even in a car.</p>
+            </section>
+
+            <section>
+                <h2>Temple Square</h2>
+                <picture>                    
+                    <!-- <source media="(max-width: 560px)" srcset="images/flowers500.webp">
+                    <source media="(max-width: 1020px)" srcset="images/flowers800.webp">
+                    <source media="(min-width: 1020px)" srcset="images/flowers1200.webp"> -->
+                    <img class="gallery" src="images/placeholder.webp" data-src="images/flowers500.webp" width="500"  alt="Flowers at Temple Square"  >
+                </picture>
+                <p>Temple Square, located in downtown Salt Lake City and home to the Salt Lake Temple, contains some of the most beautiful flower beds in the entire valley. You may also wish to visit the Tabernacle or learn more about the Church of Jesus Christ of Latter-day Saints or attend one of the free concerts hosted at Temple Square.</p>
+            </section>
+
+            <section>
+                <h2>Utah State Fairpark</h2>
+                <picture>
+                    <!-- <source media="(max-width: 560px)" srcset="images/fairpark500.webp">
+                    <source media="(max-width: 1020px)" srcset="images/fairpark800.webp">
+                    <source media="(min-width: 1020px)" srcset="images/fairpark1200.webp"> -->
+                    <img class="gallery" src="images/placeholder.webp" data-src="images/fairpark500.webp" width="500"  alt="Utah State Fairpark"  >
+                </picture>0"
+                <p>The Utah State Fairpark hosts all kinds of events, from the state fair to the Days of '47 Rodeo. There is also a world-class skate park on site. It is located along the Jordan River Parkway if you happen to be traveling by pedal power or on foot.</p>
+            </section>
+
+            <section>
+                <h2>International Peace Gardens</h2>
+                <picture>
+                    <!-- <source media="(max-width: 560px)" srcset="images/peacegardens500.webp">
+                    <source media="(max-width: 1020px)" srcset="images/peacegardens800.webp">
+                    <source media="(min-width: 1020px)" srcset="images/peacegardens1200.webp"> -->
+                    <img class="gallery" src="images/placeholder.webp" data-src="images/peacegardens500.webp" width="500"  alt="International Peace Garden"  >
+                </picture>
+                <p>Located at Jordan Park (~ 1000 South on 900 West ), the International Peace Gardens consists of individual country gardens (Japan shown above) and expresses the hope for peace among nations. Various gardens represent different countries of the world through structures, sculpture, and plant species. It was dedicated in 1952. I would love to link to its homepage; however, at present its color scheme is eye-searing.</p>
+            </section>
+
+            <section>
+                <h2>The Sugarhouse Streetcar Line</h2>
+                <picture>
+                    <!-- <source media="(max-width: 560px)" srcset="images/sline500.webp">
+                    <source media="(max-width: 1020px)" srcset="images/sline800.webp">
+                    <source media="(min-width: 1020px)" srcset="images/sline1200.webp"> -->
+                    <img class="gallery" src="images/placeholder.webp" data-src="images/sline500.webp" width="500"  alt="S-Line Sculpture"  >
+                </picture>
+                <p>Connecting the Trax Light Rail line to the Sugarhouse Area, the S-Line travels from the Central Point Station to McClelland Street near Fairmont Park. A walking and biking trail also extends along its length and provides excellent transportation alternatives to the automobile.</p>
+            </section>
+
+
+           
         </main>
         <footer>
+            <span id="lastvisit"></span>
             <picture><img src="images/slccc.png" alt="Salt Lake Chamber of Commerce Logo"></picture>
             <div id="address">
                 <h2>Salt Lake City Chamber of Commerce</h2>            
@@ -74,5 +130,6 @@
         <script src="scripts/widgets.js"></script>
         <script src="scripts/footer.js"></script>
         <script src="scripts/lastvisit.js"></script>
+        <script src="scripts/loadimages.js"></script>
     </body>
 </html>
