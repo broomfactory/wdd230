@@ -22,6 +22,10 @@
         border-radius: 1em;
     }
 
+    img.gallery:hover {
+        filter: saturate(150%);
+    }
+
     main.gallery section p, main.gallery section h2 {
         font-size: 2rem;
     }
