@@ -132,11 +132,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: var(--secondary-color);
+    text-decoration: underline 0.3rem solid white;   
+    
 }
 
 nav ul li a.activepage {
-    background-color: var(--secondary-color);
+    text-decoration: underline 0.3rem solid var(--secondary-color);    
 }
 
 nav {display: none;}
