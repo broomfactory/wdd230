@@ -135,6 +135,10 @@ nav ul li a:hover {
     background-color: var(--secondary-color);
 }
 
+nav ul li a.activepage {
+    background-color: var(--secondary-color);
+}
+
 nav {display: none;}
 nav.open {display: block;}
 
