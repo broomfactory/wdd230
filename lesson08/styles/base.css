@@ -1,0 +1,71 @@
+:root {
+	--mint-green: #ecfefc;
+	--myrtle-green: #3d7068;
+	--brunswick-green: #14453d;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Dosis, Arial, sans-serif;	
+	background-color: var(--brunswick-green);
+}
+
+main {
+	background-color: white;
+	padding: 2rem;
+	max-width: 30em;
+	margin: 2rem auto;
+	border-radius: 1em;
+}
+table {
+	margin: 1rem auto;
+	border: thin solid black;
+	box-shadow: 0 0 0.5rem rgba(200,200,200,0.3);
+	border-collapse: collapse;
+	border-radius: 0.5rem;
+}
+
+th, td {
+	padding: 0.5rem 1rem;
+}
+
+th {
+	background-color: var(--myrtle-green);
+	color: white;
+}
+
+td {
+	border: thin solid var(--brunswick-green);
+	text-align: center;
+}
+
+td:first-child {
+	font-weight: 700;
+}
+
+tr:first-child th {
+	background-color: var(--brunswick-green);
+	color: white;
+}
+
+tr:nth-child(2) {
+	background-color: var(--mint-green);
+}
+
+
+caption {
+	padding: 0.5rem;
+	caption-side: bottom;
+	font-size: 0.9rem;
+}
+
+footer {
+	text-align: center;
+	color: white;
+	max-width: 30rem;
+	margin: 2rem auto;
+}
