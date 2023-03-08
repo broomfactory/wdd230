@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Salt Lake City Chamber of Commerce</title>
-        <meta name="description" content="Salt Lake City Chamber of Commerce - join us">
+        <title>Business Directory</title>
+        <meta name="description" content="Directory: Salt Lake City Chamber of Commerce">
         <meta name="author" content="Matthew Scoville">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Quicksand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/large.css"> 
-        <link rel="icon" href="favicon.ico">     
+        <link rel="stylesheet" href="styles/large.css">  
+        <link rel="icon" href="favicon.ico">    
     </head>
     <body>
         <header>  
@@ -42,42 +42,14 @@
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html" class="activepage">Join</a></li>
+                <li><a href="directory.html" class="activepage">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
                 <li><a href="#">Contact</a></li>
-            </ul>              
+            </ul>            
         </nav>
-            <h1>Join us!</h1>
-            <form method="get" action="thankyou.html">
-                <fieldset>
-                    <legend>Contact Information</legend>
-                    <label class="stacked">First Name* <input type="text" name="fname" required></label>
-                    <label class="stacked">Last Name* <input type="text" name="lname" required></label>
-                    <label class="stacked">Email* <input type="email" name="email" required placeholder="someone@domain.com"></label>
-                    <label class="stacked">Cell Phone Number* <input type="tel" name="phone" required></label>
-                    <label class="stacked">Email* <input type="email" name="email" required></label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Business Details</legend>
-                    <label class="stacked">Business Name* <input type="text" name="businessname" required></label>
-                    <label class="stacked">Business Position Title <input type="text" name="jobtitle" pattern="[A-Za-z\-\ ]{7,}" placeholder="e.g. Director of Operations" ></label>
-                    
-                    <div>Membership Level</div>
-                    <label class="sidebyside"><input type="radio" name="memberlevel" value="nonprofit"> Non-profit</label>
-                    <label class="sidebyside"><input type="radio" name="memberlevel" value="bronze"> Bronze Membership</label>
-                    <label class="sidebyside"><input type="radio" name="memberlevel" value="silver"> Silver Membership</label>
-                    <label class="sidebyside"><input type="radio" name="memberlevel" value="gold"> Gold Membership</label>
-
-                    <div>Business Description</div>
-                    <label class="stacked"><textarea name="businessdescription" placeholder="Tell us about your company"></textarea></label>                   
-
-                </fieldset>
-                <input type="hidden" name="currentdatetime" class="timestamp">
-                <input type="submit" value="Join the Chamber" class="submitbutton">
-
-            </form>
-      
+        <main>
+            <h1>Directory</h1>
+        </main>      
         <footer>
             <picture><img src="images/slccc.png" alt="Salt Lake Chamber of Commerce Logo"></picture>
             <div id="address">                
