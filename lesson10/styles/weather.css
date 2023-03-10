@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-size: 16px;
+	font-family: Dosis, Arial, sans-serif;	
+    background-color: rgb(58, 137, 216);	
+    min-width: 24rem;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    max-width: 30rem;
+    position: relative;
+    background-color: white;
+    padding: 1rem 2rem;
+}
+
+header {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+footer {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    text-align: center;
+}
