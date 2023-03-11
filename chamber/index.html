@@ -112,20 +112,16 @@
                 <h3>Event</h3>
             </section>
             <section id="weather">
-                <picture>
-                    <source media="(max-width: 560px)" srcset="images/clouds500.webp">
-                    <source media="(max-width: 1020px)" srcset="images/clouds800.webp">
-                    <source media="(min-width: 1020px)" srcset="images/clouds1200.webp">
-                    <img src="images/clouds1200.webp" alt="Airport">
-                </picture>
-                <div id="weatherstats">
-                    <h3>Weather</h3>
-                    <p id="currentconditions">Current Conditions</p>
-                    <p>Temperature: <span id="temperature">28</span>&#8457;</p>
-                    <p>Wind Speed: <span id="windspeed">7.2</span> mi/h</p>
-                    <p>Wind Chill: <span id="windchill">X</span>&#8457;</p>
-                </div>
-                        
+                <h3><span id="location"></span></h3>
+                <div id="weather-container">                        
+                    <figure>
+                        <img src="images/iconplaceholder50.png" alt="tmp" id="weather-icon"> 
+                        <figcaption></figcaption>
+                    </figure>
+                    <span id="current-temp"></span>
+                </div>                    
+                <p>Wind Speed: <span id="windspeed"></span></p>
+                <p>Wind Chill: <span id="windchill">X</span></p>
             </section>
         </main>
         <footer>
@@ -138,16 +134,17 @@
             <div id="info">
                 <p>info@slccc.org</p>
                 <p>(801) 000-0000</p>
-                <p>&#128205; Location Map</p>
+                <p>&#128205; Location Map</p>                
             </div>
             <div id="pageinfo">
+                Weather Data Graciously Provided by <a href="https://openweathermap.org/">OpenWeather (TM)</a><br>
                 <span id="copyrightyear"></span>
                 <span>| Matthew Scoville | WDD230 Project |</span>
                 <span id="lastmodified"></span>
-            </div>
+            </div>            
         </footer>
         <script src="scripts/widgets.js"></script>
         <script src="scripts/footer.js"></script>
-        <script src="scripts/windchill.js"></script>
+        <script src="scripts/weatherapi.js"></script>
     </body>
 </html>
