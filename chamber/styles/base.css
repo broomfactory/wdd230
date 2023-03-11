@@ -6,8 +6,8 @@
     --analogous-color: #4e8090;
     --analogous-light: #dbe7f0;
     --background-color: #f4f4f4;
-    --a-color: #065de9;
-    --a-visited-color: #7d2cff;
+    --a-color: #4a90ff;
+    --a-visited-color: #d3b8ff;
     /* https://coolors.co/092327-0b5351-00a9a5-4e8098-90c2e7 */
 }
 
@@ -17,13 +17,21 @@
     margin: 0;    
 }
 
+a {
+    color: var(--a-color);
+}
+
+a:visited {
+    color: var(--a-visited-color);
+}
+
+
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     background-color: var(--deep-color);
     min-width: 375px;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel', serif;
@@ -266,8 +274,10 @@ form label.stacked input:required:valid {
 
 
 #weather {    
-    padding: 2rem; 
+    padding: 2rem;     
 }
+
+
 
 #weather span {
     font-weight: bold;
