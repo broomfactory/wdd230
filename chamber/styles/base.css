@@ -17,15 +17,6 @@
     margin: 0;    
 }
 
-a {
-    color: var(--a-color);
-}
-
-a:visited {
-    color: var(--a-visited-color);
-}
-
-
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -249,8 +240,7 @@ form label.stacked input, form label.stacked select {
 
 form label.sidebyside {
     display: block;
-    padding: .75rem 0;
-    padding: #555;
+    padding: .75rem 0;    
 }
 
 form input.submitbutton {
@@ -265,11 +255,11 @@ form input.submitbutton {
 }
 
 form label.stacked input:required {
-    border-left: red solid 6px;
+    border: rgb(181, 0, 0) solid 2px;    
 }
 
 form label.stacked input:required:valid {
-    border-left: green solid 6px;
+    border: rgb(0, 175, 126) solid 2px;
 }
 
 
@@ -300,6 +290,14 @@ footer {
     text-align: center;   
     font-size: smaller;
     padding: 0.5rem;
+}
+
+footer a {
+    color: var(--a-color);
+}
+
+footer a:visited {
+    color: var(--a-visited-color);
 }
 
 footer picture img {
