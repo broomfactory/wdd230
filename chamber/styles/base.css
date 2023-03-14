@@ -11,6 +11,10 @@
     /* https://coolors.co/092327-0b5351-00a9a5-4e8098-90c2e7 */
 }
 
+.hidden {
+    display: none;
+}
+
 * {    
     box-sizing: border-box;
     padding: 0;
@@ -283,6 +287,50 @@ form label.stacked input:required:valid {
     border: none;   
 }
 
+/* Directory stuff */
+
+.directory {
+    display: block;
+    background-color: var(--form-field);   
+}
+
+.directory h1 { 
+    margin: 0; 
+    text-align: center;    
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr)); 
+    gap: 1rem;     
+}
+
+.cards section {
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.2rem rgba(0,0,0,0.2);
+    background-color: white;
+
+    padding: 0.3rem;
+    margin: 0.25rem;    
+    border: 1px solid  rgb(0, 50, 33);
+    min-width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cards section h2 {
+    padding: 1rem;
+    font-size: large;    
+}
+.cards section p {
+    padding: 0.25rem;
+}
+
+.wrap {
+    overflow-wrap: anywhere;
+}
 
 footer {
     background-color: var(--theme-color);
