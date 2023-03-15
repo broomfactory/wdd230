@@ -1,4 +1,4 @@
-const url = "https://broomfactory.github.io/wdd230/chamber/directory.json";
+const url = "https://broomfactory.github.io/wdd230/chamber/data/data.json";
 
 async function getDirectory() {
     const response = await fetch(url);
@@ -9,7 +9,7 @@ async function getDirectory() {
 
 function formatPhone(digits) {
     let nums = digits.replace(/\D/g, "")
-    return `(${nums.substring(0,3)})${nums.substring(3,6)}-${nums.substring(6,10)}`;
+    return `(${nums.substring(0,3)}) ${nums.substring(3,6)}-${nums.substring(6,10)}`;
 }
 
 const buildDirectory = (members) => {
