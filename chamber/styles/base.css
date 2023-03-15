@@ -289,6 +289,25 @@ form label.stacked input:required:valid {
 
 /* Directory stuff */
 
+#formatmenu {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#formatmenu button {
+    border-radius: 0.2rem;
+    border: 2px solid black;
+    width: 7rem;
+    padding: 0.5rem;
+    background-color: var(--theme-color);
+    color: white;
+}
+
+#formatmenu button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
 .directory {
     display: block;
     background-color: var(--form-field);   
@@ -331,6 +350,37 @@ form label.stacked input:required:valid {
 .wrap {
     overflow-wrap: anywhere;
 }
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.list section h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+}
+
+.list section p.url {
+    display: none;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section:nth-child(even) {
+    background-color: var(--form-field);
+}
+
 
 footer {
     background-color: var(--theme-color);
