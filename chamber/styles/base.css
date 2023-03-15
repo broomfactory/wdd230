@@ -230,6 +230,7 @@ form label.stacked, form div {
 
 form label.stacked input, form label.stacked select, form textarea {
     -webkit-appearance: none;
+    appearance: none;
     display: block;
     font-size: 1rem;
     border: solid 3px var(--secondary-color);
