@@ -208,16 +208,15 @@ main.gallery section {
 
 /* Form Styles */
 
-
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid var(--analogous-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 10px;
     padding: .5rem 2%;
 }
 
 form legend {
-    color: var(--analogous-color);
+    color: var(--secondary-color);
     margin: 0 1rem;
     padding: 0 0.5rem;
 }
@@ -233,10 +232,10 @@ form label.stacked input, form label.stacked select, form textarea {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
-    border: solid 1px var(--theme-color);
+    border: solid 3px var(--secondary-color);
     border-radius: 4px;
     padding: .75rem;
-    color: #555;
+    color: var(--secondary-color);
     width: 100%;
     max-width: 20rem;
     background-color: var(--form-field);
@@ -430,4 +429,15 @@ main.thanks {
 main.thanks img {
     margin-bottom: 1rem;
 }
+
+#join {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+
+#membershipinfo {
+    display: none;
+}
+
+
 

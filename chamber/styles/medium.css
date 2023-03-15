@@ -80,4 +80,20 @@
         gap: 2rem;
     }
 
+
+    #membershipinfo {
+        display: block;
+        padding: 1rem;
+        border: 3px solid var(--secondary-color);
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+
+    #membershipinfo > * {
+        margin: 1rem;
+    }
+
+    form {
+        margin-left: 1rem;
+    }
 }

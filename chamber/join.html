@@ -48,35 +48,54 @@
             </ul>              
         </nav>
             <h1>Join us!</h1>
-            <form method="get" action="thankyou.html">
-                <fieldset>
-                    <legend>Contact Information</legend>
-                    <label class="stacked">First Name* <input type="text" name="fname" required></label>
-                    <label class="stacked">Last Name* <input type="text" name="lname" required></label>
-                    <label class="stacked">Email* <input type="email" name="email" required placeholder="someone@domain.com"></label>
-                    <label class="stacked">Cell Phone Number* <input type="tel" name="phone" required></label>
-                </fieldset>
+            <div id="join">
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label class="stacked">First Name* <input type="text" name="fname" required></label>
+                        <label class="stacked">Last Name* <input type="text" name="lname" required></label>
+                        <label class="stacked">Email* <input type="email" name="email" required placeholder="someone@domain.com"></label>
+                        <label class="stacked">Cell Phone Number* <input type="tel" name="phone" required></label>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Business Details</legend>
-                    <label class="stacked">Business Name* <input type="text" name="businessname" required></label>
-                    <label class="stacked">Business Position Title <input type="text" name="jobtitle" pattern="[A-Za-z\-\ ]{7,}" placeholder="e.g. Director of Operations" ></label>
+                    <fieldset>
+                        <legend>Business Details</legend>
+                        <label class="stacked">Business Name* <input type="text" name="businessname" required></label>
+                        <label class="stacked">Business Position Title <input type="text" name="jobtitle" pattern="[A-Za-z\-\ ]{7,}" placeholder="e.g. Director of Operations" ></label>
+                        
+                        <div>Membership Level</div>
+                        <label class="sidebyside"><input type="radio" name="memberlevel" value="nonprofit"> Non-profit</label>
+                        <label class="sidebyside"><input type="radio" name="memberlevel" value="bronze"> Bronze Membership</label>
+                        <label class="sidebyside"><input type="radio" name="memberlevel" value="silver"> Silver Membership</label>
+                        <label class="sidebyside"><input type="radio" name="memberlevel" value="gold"> Gold Membership</label>
+
+                        <div>Business Description</div>
+                        <label class="stacked">
+                            <textarea cols="50" rows="4" class="businessdescription" type="text" name="businessdescription" placeholder="Tell us about your company"></textarea>
+                        </label>   
+                    </fieldset>
+                    <input type="hidden" name="currentdatetime" id="timestamp">
+                    <input type="submit" value="Join the Chamber" class="submitbutton">
+
+                </form>
+                <div id="membershipinfo">
+                    <h2>Membership Levels and Benefits</h2>
+                    <h3>Gold</h3>
+                    <p>Everything available to Silver Members <em>plus</em>...</p>
+                    <p>Business highlighted in directory and featured in chamber site spotlight articles.</p>
+                    <p>Annual recognition dinner and reception</p>
+                    <h3>Silver</h3>
+                    <p>Everything available to Bronze Members <em>plus</em>...</p>
+                    <p>Exclusive networking events hosted by the chamber.</p>
+                    <h3>Bronze</h3>   
+                    <p>Listing in chamber business directory.</p>
+                    <p>Regular meetings to discuss successes and opportunities for improvement.</p>
+                    <h3>Non Profit</h3>                    
+                        <p>Chamber Bronze levelm membership at no cost.</p>
+                        <p>Available to non-profit organizations.</p>
                     
-                    <div>Membership Level</div>
-                    <label class="sidebyside"><input type="radio" name="memberlevel" value="nonprofit"> Non-profit</label>
-                    <label class="sidebyside"><input type="radio" name="memberlevel" value="bronze"> Bronze Membership</label>
-                    <label class="sidebyside"><input type="radio" name="memberlevel" value="silver"> Silver Membership</label>
-                    <label class="sidebyside"><input type="radio" name="memberlevel" value="gold"> Gold Membership</label>
-
-                    <div>Business Description</div>
-                    <label class="stacked">
-                        <textarea cols="50" rows="4" class="businessdescription" type="text" name="businessdescription" placeholder="Tell us about your company"></textarea>
-                    </label>   
-                </fieldset>
-                <input type="hidden" name="currentdatetime" id="timestamp">
-                <input type="submit" value="Join the Chamber" class="submitbutton">
-
-            </form>
+                </div>
+            </div>
       
         <footer>
             <picture><img src="images/slccc.png" alt="Salt Lake Chamber of Commerce Logo"></picture>
