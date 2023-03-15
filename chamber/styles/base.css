@@ -229,7 +229,7 @@ form label.stacked, form div {
     font-size: .8rem;
 }
 
-form label.stacked input, form label.stacked select {
+form label.stacked input, form label.stacked select, form textarea {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -264,6 +264,11 @@ form label.stacked input:required {
 
 form label.stacked input:required:valid {
     border: rgb(0, 175, 126) solid 2px;
+}
+
+form input.businessdescription {
+    width: auto;
+    height: 10rem;
 }
 
 
@@ -381,6 +386,14 @@ form label.stacked input:required:valid {
     background-color: var(--form-field);
 }
 
+.left {
+    float: left;
+}
+
+.rounded {
+    border-radius: 1em;
+    box-shadow: 0.25rem 0.25rem 0.2rem rgba(0,0,0,0.2);    
+}
 
 footer {
     background-color: var(--theme-color);
@@ -405,5 +418,16 @@ footer picture img {
 
 footer img, footer div {
     margin: 1rem;
+}
+
+main.thanks {
+    display: block;
+    margin: 0 auto ;    
+    background-color: var(--analogous-light);
+    padding: 1rem;    
+}
+
+main.thanks img {
+    margin-bottom: 1rem;
 }
 

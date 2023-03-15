@@ -74,4 +74,10 @@
         grid-row: 2/3;
     }
     
+    div.thanks {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
 }

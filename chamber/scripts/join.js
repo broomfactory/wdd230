@@ -1,1 +1,1 @@
-document.querySelector(".timestamp").value = Date();
+document.getElementById("timestamp").value = Date();
