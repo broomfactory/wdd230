@@ -82,18 +82,15 @@
 
 
     #membershipinfo {
-        display: block;
-        padding: 1rem;
-        border: 2px solid var(--secondary-color);
-        border-radius: 1rem;
-        margin: 1rem;
-    }
-
-    #membershipinfo > * {
-        margin: 1rem;
+        display: block;        
     }
 
     form {
         margin-left: 1rem;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 320px 1fr;    
     }
 }

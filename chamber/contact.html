@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Business Directory</title>
-        <meta name="description" content="Directory: Salt Lake City Chamber of Commerce">
+        <title>Salt Lake City Chamber of Commerce</title>
+        <meta name="description" content="Salt Lake City Chamber of Commerce - join us">
         <meta name="author" content="Matthew Scoville">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,10 +12,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Overlock+SC&family=Quicksand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/large.css">  
-        <link rel="icon" href="favicon.ico">    
+        <link rel="stylesheet" href="styles/large.css"> 
+        <link rel="icon" href="favicon.ico">     
     </head>
-    <body>
+    <body class="thanks">
         <header>  
             <picture>
                 <img id="chamberlogo" src="images/slccc.png" alt="Chamber of Commerce Logo">
@@ -42,19 +42,40 @@
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" class="activepage">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>            
+                <li><a href="contact.html" class="activepage">Contact</a></li>
+            </ul>              
         </nav>
-        <main class="directory">
-            <h1>Directory</h1>
-            <div id="formatmenu">
-                <button id="dirgrid">Cards</button>
-                <button id="dirlist">List</button>
+        <div class="contact">
+            <div>
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label class="stacked">First Name* <input type="text" name="fname" required></label>
+                        <label class="stacked">Last Name* <input type="text" name="lname" required></label>
+                        <label class="stacked">Email* <input type="email" name="email" required placeholder="someone@domain.com"></label>
+                        <label class="stacked">Cell Phone Number* <input type="tel" name="phone" required></label>
+                        <label class="stacked">Comment
+                            <textarea cols="50" rows="4" class="comment" name="comment" placeholder="Type your comment here"></textarea>
+                        </label>   
+                    </fieldset>
+                    <input type="hidden" name="currentdatetime" id="timestamp">
+                    <input type="submit" value="Send Your Comment" class="submitbutton">
+                </form>
+
+            </div>            
+            <div id="contactinfo">
+                <h1>Contact Us</h1>
+                <h2>Salt Lake City Chamber of Commerce</h2>            
+                <p>400 South State Street</p>
+                <p>Salt Lake City, Utah, USA 84199</p>
+                <p>801-555-0100</p>
+                <picture>
+                    <img class="rounded" src="images/mural500.webp" alt="Mural">
+                </picture>
             </div>
-            <article class="cards"></article>
-        </main>      
+        </div>     
         <footer>
             <picture><img src="images/slccc.png" alt="Salt Lake Chamber of Commerce Logo"></picture>
             <div id="address">                
@@ -74,7 +95,6 @@
             </div>
         </footer>
         <script src="scripts/widgets.js"></script>
-        <script src="scripts/footer.js"></script>
-        <script src="scripts/directory.js"></script>
+        <script src="scripts/footer.js"></script>        
     </body>
 </html>

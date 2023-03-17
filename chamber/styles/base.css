@@ -29,7 +29,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cinzel', serif;
+    font-family: 'Overlock SC', serif;
 }
 
 header {
@@ -395,6 +395,10 @@ form input.businessdescription {
     box-shadow: 0.25rem 0.25rem 0.2rem rgba(0,0,0,0.2);    
 }
 
+.auto {
+    width: auto;
+}
+
 footer {
     background-color: var(--theme-color);
     color: white;
@@ -436,12 +440,33 @@ main.thanks img {
     grid-template-columns: 500px 1fr;
 }
 
+#membershipinfo, #contactinfo {
+    display: block;
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
 #membershipinfo {
     display: none;
+}
+
+#membershipinfo > * {
+    margin: 1rem;
 }
 
 .center {
     text-align: center;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;    
+}
+
+#contactinfo img {
+    margin-top: 2rem;
+    width: 100%;
+}
 
