@@ -180,10 +180,10 @@ main.gallery {
 section {
     display: block;    
     background-color: var(--analogous-light);
-    text-align: center;
-    /*width: 100%;*/
-    border: 1px solid var(--analogous-color);    
-    
+    text-align: center;    
+    border: 2px solid var(--analogous-color);    
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 }
 
 section div {
@@ -276,8 +276,6 @@ form input.businessdescription {
     padding: 2rem;     
 }
 
-
-
 #weather span {
     font-weight: bold;
     font-size: larger;
@@ -291,6 +289,21 @@ form input.businessdescription {
     justify-content: center; 
     border: none;   
 }
+
+#spotlight h3 {
+  display: none;
+}
+
+#spotlight div {
+    border: 2px solid var(--secondary-color);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    
+}
+
+
 
 /* Directory stuff */
 

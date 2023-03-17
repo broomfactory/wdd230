@@ -64,6 +64,17 @@
         grid-column: 1/5;
         grid-row: 2/3;
     }
+
+    #spotlight h3 {
+        display: block;
+    }
+
+    #spotlight div:nth-child(n+4) {
+        display: block;
+    }
+
+
+
     nav, nav.open { display: block; }
     
     nav ul {

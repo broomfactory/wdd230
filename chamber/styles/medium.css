@@ -84,6 +84,10 @@
     #membershipinfo {
         display: block;        
     }
+   
+    #spotlight div:nth-child(n+4) {
+        display: none;
+    }
 
     form {
         margin-left: 1rem;
