@@ -182,7 +182,7 @@ section {
     background-color: var(--analogous-light);
     text-align: center;    
     border: 2px solid var(--analogous-color);    
-    border-radius: 0.5rem;
+    border-radius: 0.5rem;    
     padding: 0.5rem;
 }
 
@@ -192,19 +192,22 @@ section div {
     border: 1px solid rgba(255, 255, 255, 0.8);    
 }
 
-section picture img{
+section picture {
+    padding: 1rem;
+}
+
+section picture img {
     display: block;
-    width: 100%;
+    width: 100%;    
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.2rem rgba(0,0,0,0.2);
 }
 
 main.gallery section {
-    padding: 1rem;
-        
+    padding: 1rem;        
 }
 
-/* main.gallery section h2 {
-    margin: 0.5rem 0;
-} */
+
 
 /* Form Styles */
 
@@ -483,3 +486,7 @@ main.thanks img {
     width: 100%;
 }
 
+#event p {
+    display: block;
+    margin: 0.5rem 0;
+}
