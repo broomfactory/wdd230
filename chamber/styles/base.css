@@ -150,7 +150,6 @@ main.gallery {
     gap: 0.5rem;    
 }
 
-
 section {
     display: block;    
     background-color: var(--analogous-light);
@@ -398,11 +397,11 @@ footer {
 }
 
 footer a {
-    color: var(--a-color);
+    color: #bcd6ff;
 }
 
 footer a:visited {
-    color: var(--a-visited-color);
+    color: #e9dbff;
 }
 
 footer picture img {
