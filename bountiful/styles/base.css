@@ -1,0 +1,46 @@
+:root {
+    /*https://coolors.co/820263-d90368-eadeda-2e294e-ffd400*/
+    --Byzantium: #820263;
+    --DogwoodRose: #D90368;
+    --Timberwolf: #EADEDA;
+    --SpaceCadet: #2E294E;
+    --Gold: #FFD400;
+    /*https://coolors.co/ffc857-e9724c-c5283d-481d24-255f85*/
+    --Sunglow: #FFC857;
+    --BurntSienna: #E9724C;
+    --Cardinal: #C5283D;
+    --ChocolateCosmos: #481D24;
+    --LapisLazuli: #255F85;
+    /*https://coolors.co/064789-427aa1-ebf2fa-aa4465-861657*/
+    --PolynesianBlue: #064789;
+    --UCLABlue: #427aa1;
+    --AliceBlue: #ebf2fa;
+    --RaspberryRose: #aa4465;
+    --Murrey: #861657;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fredoka One", cursive;
+    font-weight: 400;
+}
+
+body {
+    font-family: Marcellus, 'Times New Roman', serif;
+    font-size: 16px;
+    background: var(--Timberwolf);
+}
+
+main {
+    background: white;  
+    max-width: 1000px;  
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--ChocolateCosmos);
+    color: var(--Sunglow);
+    max-width: 1000px;
+    border-radius: 0 0 1rem 1rem ;
+    margin: 0 auto;
+    padding: 1rem;
+}
