@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Bountiful Foods</title>
+        <meta name="description" content="A brief history of Bountiful Foods, a map to our location, and contact information. We would love to hear from you!">
+        <meta name="author" content="Matthew Scoville">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Fredoka:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/base.css">        
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" href="favicon.ico">   
+    </head>
+    <body>
+        <header>
+            <picture>
+                <img class="logo" src="images/bflogo.png" alt="Bountiful Foods Logo">
+            </picture>
+            <h1>Bountiful Foods</h1>
+            <nav id="navmenu">
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh!</a></li>
+                    <li class="activepage"><a href="aboutus.html">About Us</a></li>
+                </ul>                
+            </nav>
+            <button id="hamburger"><span>&#9776;</span><span>X</span></button>  
+        </header>  
+        <main class="about">
+            <section class="history">
+                <h2>A Brief History</h2>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/bougainvillea400v.webp">
+                    <source media="(max-width: 1000px)" srcset="images/bougainvillea700v.webp">
+                    <source media="(min-width: 1000px)" srcset="images/bougainvillea1100v.webp">
+                    <img class="rounded" src="images/bougainvillea400v.webp" width="400" loading="lazy" alt="Bougainvillea">                    
+                </picture>     
+                <p>We began this effort many years ago after hearing about our friends' struggles getting their kids to eat something, anything! with nutritional value.
+                    There must be, we reasoned, a call for healthy alternatives to the high-sugar, processed snacks found ubiquitously.
+                    After some trials with our own children, we found that there was indeed a marked for healthy drinks, made fresh from the delicious fruit so abundantly available in our region.
+                </p>
+                <p>
+                    After all these years, we continue to take delight in the flavor combinations available through our made-to-order fresh smoothies. Our fleet of smoothie trucks is ready to introduce the next generation of health-conscious
+                    families to the joys of natural nutrition. Whether you are visiting the area or looking for refreshment after an afternoon at the gym or beach, we have a fresh smoothie for you!
+                </p>
+            </section>
+            <section class="map">
+                <h2>Map</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53478.06617679536!2d-117.33904199899348!3d33.0991150330129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73299b5f3e93%3A0x9640691734d314c2!2s7040%20Avenida%20Encinas%2C%20Carlsbad%2C%20CA%2092011!5e0!3m2!1sen!2sus!4v1680587212868!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            
+            
+        </main>  
+        <footer>
+            <section class="contact">
+                <h2>Bountiful Foods</h2>
+                <p>7040 Avenida Encinas #104</p>
+                <p>Carlsbad, CA 92011</p>                
+                <p>760-555-0101</p>
+                <p>contact@bountifulfoods.com</p>
+            </section>
+            <div id="pageinfo">
+                Weather Data Graciously Provided by <a href="https://openweathermap.org/">OpenWeather (TM)</a><br>
+                <span id="copyrightyear"></span>
+                <span>| Matthew Scoville | BYUI | WDD230 Project |</span>
+                <span id="lastmodified"></span>
+            </div>  
+        </footer>
+        <script src="scripts/footer.js"></script>
+    </body>
+</html>

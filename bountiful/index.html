@@ -4,24 +4,114 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bountiful Foods</title>
-        <meta name="description" content="Bountiful Foods, fresh locally and responsibly sourced fruit and smoothies, healthy snacks and beverages">
+        <meta name="description" content="Bountiful Foods, fresh locally and responsibly sourced fruit and smoothies, healthy snacks and beverages. Also operates a fleet of fruit and smoothie trucks to support your enjoyment of the beautiful California Coast!">
         <meta name="author" content="Matthew Scoville">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Fredoka+One&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/base.css">
-        <!--
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Fredoka:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/base.css">        
         <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/large.css"> -->
+        <link rel="stylesheet" href="styles/large.css">
         <link rel="icon" href="favicon.ico">   
     </head>
     <body>
         <header>
+            <picture>
+                <img class="logo" src="images/bflogo.png" alt="Bountiful Foods Logo">
+            </picture>
             <h1>Bountiful Foods</h1>
+            <nav id="navmenu">
+                <ul class="navigation">
+                    <li class="activepage"><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh!</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>                
+            </nav>
+            <button id="hamburger"><span>&#9776;</span><span>X</span></button>  
         </header>  
         <main>
-            <p>Delicious Smoothies!</p>
+            <section class="hero">
+                <h2>Create Your Fresh Mix!</h2>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/foodtruck400.webp">
+                    <source media="(max-width: 1000px)" srcset="images/foodtruck700.webp">
+                    <source media="(min-width: 1000px)" srcset="images/foodtruck1100.webp">
+                    <img src="images/foodtruck400.webp" width="400" loading="lazy" alt="Fruit and Smoothie Truck">                    
+                </picture>
+                <a href="fresh.html"><div class="herobutton"><p>Create a Smoothie!</p></div></a>
+            </section>
+            <section class="weather">
+                <h2 class="hidden">Weather</h2>
+                <article>
+                    <h3>Carlsbad Conditions</h3>
+                    <div id="current-conditions" class="rounded">
+                        <div id="currcond">
+                        <figure>
+                            <img src="images/iconplaceholder50.png" alt="tmp" id="weathericon"> 
+                            <figcaption></figcaption>
+                        </figure>                        
+                        <p><span id="conditions"></span></p>
+                        </div>
+                        <p><span id="temperature"></span></p>                
+                        <p><span id="humidity"></span></p>                
+                    </article>                
+                <article>
+                    <h3>Three Day Temperature Forecast</h3>
+                    <div id="forecast" class="rounded"></div>
+                </article>                
+                
+            </section>
+            <section class="fresh">
+                <h2>Your Specialty Drinks</h2>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/smoothie400.webp">
+                    <source media="(max-width: 1000px)" srcset="images/smoothie700.webp">
+                    <source media="(min-width: 1000px)" srcset="images/smoothie1100.webp">
+                    <img src="images/smoothie400.webp" width="400" loading="lazy" alt="Delicious Fruit Smoothie">                    
+                </picture>
+                <a href="fresh.html"><div class="freshcaption"><p>Create Your First Smoothie!</p></div></a>
+            </section>
+            <section class="coastalinfo">
+                <h2>Torrey Pines</h2>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/torrey400.webp">
+                    <source media="(max-width: 1000px)" srcset="images/torrey700.webp">
+                    <source media="(min-width: 1000px)" srcset="images/torrey1100.webp">
+                    <img class="rounded" src="images/torrey400.webp" width="400" loading="lazy" alt="Torrey Pines Coast">                    
+                </picture>
+                <p>In addition to being the only place on earth where the Torrey Pine will grow, this beautiful area has a storied history and a network of hiking trails that offers
+                    spectacular views of the Pacific Ocean. You may also see paragliders riding the ridge from the nearby flight park. Beyond the spectacular Torrey Pine,
+                you will see magnificent wildflowers while taking in the sea air. </p>
+            </section>
+            <section class="social">
+                <h2>Follow us!</h2>
+                <p>Check out our social media pages for the latest delicious smoothie combinations, food truck locations, and event details.</p>
+                <div class="rounded">
+                    <a href="https://youtube.com"><img src="images/youtube.png" alt="Youtube"></a>
+                    <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+                </div>
+            </section>
         </main>  
+        <footer>
+            <section class="contact">
+                <h2>Bountiful Foods</h2>
+                <p>7040 Avenida Encinas #104</p>
+                <p>Carlsbad, CA 92011</p>                
+                <p>760-555-0101</p>
+                <p>contact@bountifulfoods.com</p>
+            </section>
+            <div id="pageinfo">
+                <p>Weather Data Graciously Provided by <a href="https://openweathermap.org/">OpenWeather (TM)</a></p>
+                <p><span id="copyrightyear"></span>
+                <span>| Matthew Scoville | BYUI | WDD230 Project</span></p>
+                <p><span id="lastmodified"></span></p>
+                <p><a href="attribution.html">Image Attributions</a></p>
+            </div>  
+        </footer>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/smoothies.js"></script>
+        <script src="scripts/footer.js"></script>
     </body>
 </html>
